@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--===================bootstrap css====================  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--===================font iwsome====================  -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!--===================main stylesheet====================  -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>weather</title>
+</head>
+
+<body>
+  <!-- =========navbar======= -->
+  <nav class="navbar navbar-expand-lg p-4">
+    <div class="container">
+      <a class="navbar-brand d-flex text-white fs-6 " href="index.html">
+        <img src="images/logo.png" class="pe-3" alt="logo">
+        <span>
+          <h2 class="h6 fw-bold mb-0">weather</h2>
+          <span class="fs-10">tagline goes here</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto   p-4 mb-2 mb-lg-0">
+
+          <li class="nav-item ">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- =========home======= -->
+  <div class="home py-5">
+    <div class="container py-4">
+      <div class="input position-relative">
+        <input type="text" class="form-control main-color  rounded-5 border-0  p-3 "
+          placeholder="find your location..." />
+        <button class="btn btn-info text-white position-absolute  rounded-5 px-4  ">Find</button>
+      </div>
+      <div class="row g-4 rounded-3 overflow-hidden mt-5  ">
+      </div>
+    </div>
+  </div>
+  <!-- =========fotter======= -->
+  <div class="fotter py-5">
+    <div class="container ">
+      <div class="d-flex justify-content-between pb-5">
+        <div class="input position-relative w-75">
+          <input type="text" class="form-control main-color  rounded-5 border-0  p-3 " placeholder="
+    Enter your email to subscribe...
+    " />
+          <button class="btn btn-info text-white position-absolute  rounded-5 px-4  ">Subscribe</button>
+
+        </div>
+        <div class="fotter-icons d-flex   text-info">
+          <i class="fa-brands ms-1 rounded-circle fa-facebook-f"></i>
+          <i class="fa-brands ms-1 rounded-circle  fa-twitter"></i>
+          <i class="fa-brands ms-1 rounded-circle fa-google-plus-g"></i>
+          <i class="fa-brands ms-1 rounded-circle fa-pinterest"></i>
+        </div>
+      </div>
+      <p class="text-white text-opacity-50">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
