@@ -43,7 +43,9 @@ inputdat.addEventListener("input",async function () {
   let country = inputdat.value;
   req=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=f9700c1d85f64f39b4133455242006 &q=${country}&days=3`);
    respose =await req.json();
-    timeCurrent = respose.location.localtime.split(" ")[0];
+  if(req.status==200)
+  {
+        timeCurrent = respose.location.localtime.split(" ")[0];
     locationName = respose.location.name;
     statusWeather = respose.current.condition.text;
     urlStatusWeatherIcon = respose.current.condition.icon;
@@ -56,6 +58,8 @@ inputdat.addEventListener("input",async function () {
     nameSecondDay = respose.forecast.forecastday[2].date;
     secondeDay = new Date(nameSecondDay);
     DisplayThreeDays();
+  }
+
   // });
 });
  async function getdata() {
